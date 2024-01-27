@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>
+        Sql Webpage
+    </title>
+    <link href="CSS/Boostrap.css" rel="stylesheet" />
+    <link href="CSS/styless.css" rel="stylesheet" />
+    <script type="text/javascript" src="JS/JQUERY.js"></script>
+    <script type="text/javascript" src="JS/validations.js"></script>
+    <script>
+
+       
+    </script>
+
+    <style>
+        .tb_sub_menu {
+            width: 100%;
+            background-color: lightslategrey;
+            border-radius: 25px;
+            align-items: center;
+        }
+            .tb_sub_menu tr td {
+                
+                align-content: center;
+            }
+            .btnsubmenu {
+                width: 80%;
+                border-radius: 30px;
+                margin-left:20px;
+            }
+            .btnsubmenu:hover{
+                background-color:aquamarine;
+            }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html">COURESS MENU</a>
+            </div>
+            <ul class="links">
+                <li class="nav_lis"><a href="#" onclick="dataselectss('0')">Sql</a></li>
+                <li class="nav_lis"><a href="#" onclick="dataselectss('1')">Anguler</a></li>
+                <li class="nav_lis"><a href="#">Home</a></li>
+                <li class="nav_lis"><a href="#">Home</a></li>
+
+            </ul>
+            <a class="tag_menu" href="#">
+                tag
+            </a>
+        </div>
+    </header>
+
+
+
+    <div id="dvcoures" class="table_div" style="display:none" >
+
+        <table class="table_table">
+            <tr>
+                <td style="padding-top:5px" class="table_right_td">
+
+                    
+                    <table class="table_menu_loud" id="divmenuload">
+                    </table>
+                </td>
+                <td class="table_left_td">
+                    <iframe id="videos" height="560" width="310" class="w-100" controls="controls" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="dvlouds" style="display:none" class="louddivs" >
+        <h1>Wel Come</h1>
+
+    </div>
+    <!--<tr>
+        <td>
+            TOP
+        </td>
+    </tr>-->
+</body>
+</html>
