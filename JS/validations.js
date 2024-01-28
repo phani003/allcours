@@ -43,6 +43,7 @@ function loudtopics(tp) {
     $("#dvcoures").show();
     $("#dvlouds").hide();
     $("#dvtopicsloud").show();
+    $("#videos").hide();
 
     const courestopics = coures.split(",")[tp].trim();
 
@@ -109,6 +110,7 @@ function dataselectss(datas) {
 
         case data == 'sql':
 
+            $("#dvtopicsloud").load("topics/sqltopics.txt");
             loudtopics(datas);
             videohead = sqlhead;
             videourl = sqlurl;
@@ -116,6 +118,7 @@ function dataselectss(datas) {
             break;
         case data == 'anguler':
 
+            $("#dvtopicsloud").load("topics/angulertopics.txt");
             loudtopics(datas);
             videohead = angulerhead;
             videourl = angulerurl;

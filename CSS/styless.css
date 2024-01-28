@@ -123,3 +123,8 @@ header {
     transform: translate(-50%, -50%);
     padding: 10px;
 }
+.dv_louddivs {
+    width: 100%;
+    transform: translate(-50%, -50%);
+    overflow: scroll;
+}

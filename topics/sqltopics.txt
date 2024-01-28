@@ -1,0 +1,34 @@
+                                      <h3 align='center'>     SQL TOPICS  </h3> </br>
+                                      
+
+SQL Server clustering is the term used to describe a collection of two or more physical servers (nodes), connected via a LAN, each of which host a SQL server instance and have the same access to shared storage.</br>
+
+An FCI runs in a WSFC resource group with one or more WSFC nodes. When the FCI starts up, one of the nodes assumes ownership of the resource group and brings its SQL Server instance online. The resources owned by this node include:.</br>
+
+Network name.</br>
+
+IP address.</br>
+
+Shared disks.</br>
+
+SQL Server Database Engine service.</br>
+
+SQL Server Agent service.</br>
+
+SQL Server Analysis Services service, if installed.</br>
+
+One file share resource, if the FILESTREAM feature is installed.</br>
+
+At any time, only the resource group owner (and no other node in the FCI) is running its respective SQL Server services in the resource group. When a failover occurs, whether it be an automatic failover or a planned failover, the following sequence of events happens:.</br>
+
+Unless a hardware or system failure occurs, all dirty pages in the buffer cache are written to disk..</br>
+
+All respective SQL Server services in the resource group are stopped on the active node..</br>
+
+The resource group ownership is transferred to another node in the FCI..</br>
+
+The new resource group owner starts its SQL Server services..</br>
+
+Client application connection requests are automatically directed to the new active node using the same virtual network name (VNN)..</br>
+
+The FCI is online as long as its underlying WSFC cluster is in good quorum health (the majority of the quorum WSFC nodes are available as automatic failover targets). When the WSFC cluster loses its quorum, whether due to hardware, software, network failure, or improper quorum configuration, the entire WSFC cluster, along with the FCI, is brought offline. Manual intervention is then required in this unplanned failover scenario to reestablish quorum in the remaining available nodes in order to bring the WSFC cluster and FCI back online. For more information

@@ -1,0 +1,12 @@
+﻿
+
+<h3 align='center'>Anguler TOPICS</h3>
+
+This tutorial is specially designed to help you learn AngularJS as quickly and efficiently as possible.</br>
+
+First, you will learn the basics of AngularJS: directives, expressions, filters, modules, and controllers.</br>
+
+Then you will learn everything else you need to know about AngularJS:</br>
+
+Events, DOM, Forms, Input, Validation, Http, and more.</br>
+
