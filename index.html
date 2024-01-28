@@ -33,14 +33,23 @@
             .btnsubmenu:hover{
                 background-color:aquamarine;
             }
+        .header_show {
+            /* From https://css.glass */
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 16px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
     </style>
 </head>
 <body>
 
-    <header>
+    <header id="hddetails" class="header_show" >
         <div class="navbar">
             <div class="logo">
-                <a href="index.html">COURESS MENU</a>
+                <a href="#" onclick="crosspress();">COURSE</a>
             </div>
             <ul class="links">
                 <li class="nav_lis"><a href="#" onclick="dataselectss('0')">Sql</a></li>
@@ -69,7 +78,7 @@
                 </td>
                 <td class="table_left_td">
                     <iframe id="videos" height="560" width="310" class="w-100" controls="controls" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                    <div  id="dvtopicsloud" class="dv_louddivs" style="display: none; color: white; width: 100%;;">
+                    <div align="center" id="dvtopicsloud" class="dv_louddivs" style="display: none; color: white; width: 100%;;">
                         <!--<h1  style="color:white;">Wel Come</h1>-->
                     </div>
                 </td>
@@ -80,11 +89,34 @@
         <h1 style="color:white;">Wel Come</h1>
 
     </div>
+    <div id="dvlogin" class="louddivs1" style="display:none;" >
+
+        <table class="tdlogin" style="border:solid;">
+            <tr>
+            <td>LoginID </td> 
+            <td>: <input id="txtlogin" type="text" /> </td> 
+            </tr>
+            <tr>
+            <td> Password </td> 
+            <td> : <input id="txtpassword" type="password" /> </td> 
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align:center">
+                    <button class="btnlogin" type="button"  onclick=" loginpages()" >Login </button>
+                </td>
+            </tr>
+        </table>
+        
+            
+        
+        
+    </div>
     <!--class="louddivs"-->
     <!--<tr>
         <td>
             TOP
         </td>
     </tr>-->
+    <input type="hidden" id="logindata" />
 </body>
 </html>

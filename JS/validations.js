@@ -6,7 +6,10 @@ $(document).ready(function () {
     
     /*$("#imgsrc").show();*/
     $("#videos").hide();
-    $("#dvlouds").show();
+    $("#dvlouds").hide();
+    $("#hddetails").hide();
+    $("#dvlogin").show();
+    loudlogin();
 });
 
 /*https://www.youtube.com/watch?v=-WM9VJa-ZUw*/
@@ -209,6 +212,48 @@ function videopalye(videono) {
     $("#videos").removeAttr('src');
     $("#videos").attr("src", videoss);
     return false;
+}
+
+
+function loginpages() {
+
+    let loginids = $("#txtlogin").val();
+    let passwords = $("#txtpassword").val();
+
+    if (loginids == "admin" && passwords == "1234") {
+
+        $("#logindata").val("1");
+      
+    } else if ((loginids != "" && passwords == "") || (loginids == "" && passwords != "") || (loginids == "" && passwords == "")) {
+        alert("Enter the Login or Password");
+    } else {
+        alert("Login or Password wrong");
+    }
+
+    loudlogin()
+}
+
+
+function loudlogin() {
+
+    let logindatass = $("#logindata").val();
+    if (logindatass == "1") {
+        $("#dvlogin").hide();
+        $("#hddetails").show();
+        $("#dvlouds").show();
+    }
+
+}
+
+function crosspress() {
+
+   
+    //$("#hddetails").show();
+    $("#divmenuload tr").remove();
+    $("#dvlouds").show();
+    $("#dvtopicsloud").hide();
+    $("#videos").hide();
+    
 }
 
 //function loadcours(cntent) {

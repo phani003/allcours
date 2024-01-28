@@ -59,9 +59,17 @@ header {
     align-items: center;
     justify-content: space-between;
 }
-.navbar .links{
-    display:flex;
-    gap:2rem;
+.links {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.navbar .links {
+    display: flex;
+    gap: 2rem;
 }
 .table_div {
     width: 100%;
@@ -127,3 +135,35 @@ header {
    
     
 }
+.louddivs1 {
+    border: 5px solid;
+    border-block-color:azure;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    height: 230px;
+    width:30%;
+   
+}
+.tdlogin {
+    border-radius: 25px;
+    text-align: center;
+    width: 100%;
+    color: burlywood;
+    gap: 10px;
+    height: 200px;
+}
+.btnlogin{
+    background-color:lightblue;
+    color:black;
+    border-radius:25px;
+    width:30%;
+        
+}
+    .btnlogin :hover {
+        background-color: lightsteelblue;
+        color:aliceblue;
+    }
+    
