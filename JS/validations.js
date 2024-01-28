@@ -227,7 +227,7 @@ function loginpages() {
     } else if ((loginids != "" && passwords == "") || (loginids == "" && passwords != "") || (loginids == "" && passwords == "")) {
         alert("Enter the Login or Password");
     } else {
-        alert("Login or Password wrong");
+        alert("Login or Password is wrong");
     }
 
     loudlogin()
@@ -254,6 +254,19 @@ function crosspress() {
     $("#dvtopicsloud").hide();
     $("#videos").hide();
     
+}
+
+function logoutpage() {
+
+    if (confirm("are you want logout")) {
+
+        $("#alogout").attr("href", "index.html");
+        return true;
+    } else {
+
+        return false;
+
+    }
 }
 
 //function loadcours(cntent) {
