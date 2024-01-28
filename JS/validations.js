@@ -59,7 +59,7 @@ function loudtopics(tp) {
     return false;
      
 }
-const coures = "sql,anguler";
+const coures = "sql,anguler,testing";
 
 /*---------------------sql topics start ------------------*/
 
@@ -91,10 +91,35 @@ const angulerurl = [angulerurlintraduction];
 
 /*------------------------naguler topics end --------------------*/
 
+/*---------------------------testing topics start------------------*/
+
+let testingtopics = "manuval,automation,jmeter";
+
+
+let manuvalheading = "class1,class2,class3,class4,class5,class6,class7,class8,class9,class10,class11,class12";
+let manuvalurl = "FAGpZaUn7v4?si=iF5tW6vLnwbKs-BA,CO6z8-bnt1s?si=NMRfqco4eb3NLThc,VwOqieBBV5Q?si=OfW_EVTY81S1QACh," +
+    "91OlqJ9m2g4?si=Kprg9L-eh---Y9Td,eKMYRFn1714?si=k_RyHFhY-x_wWaiV,G6sltFijw9U?si=-fATRIc6vcZ19hNV," +
+    "q-SeXcDEPIE?si=DYlVy7RqnKnVgk3o,uioAx4ouMU8?si=Q5ktjwTPL6_tvyKH,H6Cwf37xeH4?si=7vPzUYOedJLick0r," +
+    "TjAW1mwlTsA?si=afiEt5brlpYGOpaQ,uD1-2uZjcj8?si=78RXHyfBchf8rhWk,vzBr6yOBKkg?si=nXNwo_fGKeH49zL3";
+    
+let automationseleniumheading = "selenium";
+let automationseleniumurl = "0kgI92z3J7M?si=v1gH_yAeNy01VIYf";
+
+
+let jmeterheading = "jmeter";
+let jmeterurl = "SoW2pBak1_Q?si=_FtMPRGyobQMjz9z";
 
 
 
-var datatopics = [sqltopics, angulertopics];
+
+            
+const testhead = [manuvalheading, automationseleniumheading, jmeterheading];
+const testurl = [manuvalurl, automationseleniumurl, jmeterurl];
+
+/*---------------------------testing topics end----------------------*/
+
+
+var datatopics = [sqltopics, angulertopics, testingtopics];
 var videohead = "";
 var videourl = "";
 
@@ -124,7 +149,12 @@ function dataselectss(datas) {
             videourl = angulerurl;
             
             break;
-
+        case data == 'testing':
+            $("#dvtopicsloud").load("topics/testingtopics.txt");
+            loudtopics(datas);
+            videohead = testhead;
+            videourl = testurl;
+            break;
     }
 
     return false;

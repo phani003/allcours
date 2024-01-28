@@ -1,0 +1,30 @@
+﻿          <h3 align='center' >Manual Topics </h3>
+Manual testing is a software testing process in which test cases are executed manually without using any automated tool. </br>
+All test cases executed by the tester manually according to the end user's perspective.</br>
+It ensures whether the application is working, as mentioned in the requirement document or not. </br>
+Test cases are planned and implemented to complete almost 100 percent of the software application.</br>
+Test case reports are also generated manually.</br>
+
+Manual Testing is one of the most fundamental testing processes as it can find both visible and hidden defects of the software.</br>
+The difference between expected output and output, given by the software, is defined as a defect. </br>
+The developer fixed the defects and handed it to the tester for retesting.</br>
+                    
+          <h3 align='center' >Selenium topics</h3>
+provides basic and advanced concepts of Selenium. Our Selenium tutorial is designed for beginners and professionals.</br>
+
+Selenium is one of the most widely used open source Web UI (User Interface) automation testing suite.</br>
+
+Our Selenium tutorial includes all topics of Selenium such as Features, Selenium vs QTP, Selenium Tool Suits, </br>
+Selenium IDE, Selenium IDE Locating Strategies, Selenium WebDriver, WebDriver Features, WebDriver vs RC, WebDriver Installation, etc</br>
+
+
+<h3 align='center' >jMeter</h3>
+jMeter is an Open Source testing software. It is 100% pure Java application for load and performance testing.</br>
+
+jMeter is designed to cover various categories of tests such as load testing, functional testing, performance testing, regression testing, etc., </br>
+and it requires JDK 5 or higher.</br>
+
+This tutorial provides an in-depth coverage of jMeter framework including its test plans, listeners, functions, and regular expressions.</br>
+
+
+

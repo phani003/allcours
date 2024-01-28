@@ -74,6 +74,7 @@
     <Content Include="JS\validations.js" />
     <Content Include="topics\angulertopics.txt" />
     <Content Include="topics\sqltopics.txt" />
+    <Content Include="topics\testingtopics.txt" />
     <Content Include="wallpaper\backgroundwallpaper.jpg" />
     <Content Include="Web.config" />
   </ItemGroup>
