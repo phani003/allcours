@@ -42,6 +42,8 @@ function loudtopics(tp) {
 
     $("#dvcoures").show();
     $("#dvlouds").hide();
+    $("#dvtopicsloud").show();
+
     const courestopics = coures.split(",")[tp].trim();
 
     const topicss = datatopics[tp].split(",");
@@ -58,16 +60,40 @@ function loudtopics(tp) {
 }
 const coures = "sql,anguler";
 
-const datatopics = ["cluster,azure","basics,advanced"];
+/*---------------------sql topics start ------------------*/
+
+let sqltopics = "cluster,azure";
+
+let sqlheadcluster = "cluster1,cluster2,cluster3,cluster4,cluster5,cluster6,alwayson";
+let sqlurlcluster = "u9-qyACul88?si=gDTBSximhKdlbrgo,ziF-7riyJa0?si=QA98XQ9A98GEf1Tq,ucoMZPN-QW4?si=o_0roNuQsw-N0ueE,lWWIS-jT_ss?si=bk8nF8_Qa31o1zQH,XSEqpJfzO9M?si=5v3LcYR06XKHoL2n,ervw7ptHC-g?si=AiBBQx6ycK7owLmq,-WM9VJa-ZUw?si=PyFkzM9_7J8GIlaq";
+
+let sqlheadazure = "azure1,azure2";
+let sqlurlazure = "ATUq4c2kPBc?si=m0RTI0z5p_lvn-x5,oVF6JyxGPR0?si=3rAsC2ATcEYywgoh";
 
 
-const sqlhead = ["cluster1,cluster2,cluster3,cluster4,cluster5,cluster6,alwayson", "azure1,azure2"];
-const sqlurl = ["u9-qyACul88?si=gDTBSximhKdlbrgo,ziF-7riyJa0?si=QA98XQ9A98GEf1Tq,ucoMZPN-QW4?si=o_0roNuQsw-N0ueE,lWWIS-jT_ss?si=bk8nF8_Qa31o1zQH,XSEqpJfzO9M?si=5v3LcYR06XKHoL2n,ervw7ptHC-g?si=AiBBQx6ycK7owLmq,-WM9VJa-ZUw?si=PyFkzM9_7J8GIlaq", "ATUq4c2kPBc?si=m0RTI0z5p_lvn-x5,oVF6JyxGPR0?si=3rAsC2ATcEYywgoh"];
+const sqlhead = [sqlheadcluster, sqlheadazure];
+const sqlurl = [sqlurlcluster, sqlurlazure];
+//const sqlurl = ["u9-qyACul88?si=gDTBSximhKdlbrgo,ziF-7riyJa0?si=QA98XQ9A98GEf1Tq,ucoMZPN-QW4?si=o_0roNuQsw-N0ueE,lWWIS-jT_ss?si=bk8nF8_Qa31o1zQH,XSEqpJfzO9M?si=5v3LcYR06XKHoL2n,ervw7ptHC-g?si=AiBBQx6ycK7owLmq,-WM9VJa-ZUw?si=PyFkzM9_7J8GIlaq", "ATUq4c2kPBc?si=m0RTI0z5p_lvn-x5,oVF6JyxGPR0?si=3rAsC2ATcEYywgoh"];
+
+/*----------------------sql topic end -----------------------*/
 
 
-const angulerhead = ["intradution,Gettingstrat,createapp"];
-const angulerurl = ["0eWrpsCLMJQ?si=_V_yJ-vIs4Be1Win,FVPGJHinItI?si=bJImEv0_UOEMzCtX,mDoHtD1hI3I?si=LFAsMS_6qOZtzgz8"];
 
+/*-----------------------anguler topics start ------------------*/
+let angulertopics = "basics,advanced";
+
+let anulerheadintraduction = "intradution,Gettingstrat,createapp";
+let angulerurlintraduction = "0eWrpsCLMJQ?si=_V_yJ-vIs4Be1Win,FVPGJHinItI?si=bJImEv0_UOEMzCtX,mDoHtD1hI3I?si=LFAsMS_6qOZtzgz8";
+
+const angulerhead = [anulerheadintraduction];
+const angulerurl = [angulerurlintraduction];
+
+/*------------------------naguler topics end --------------------*/
+
+
+
+
+var datatopics = [sqltopics, angulertopics];
 var videohead = "";
 var videourl = "";
 
@@ -76,6 +102,8 @@ function dataselectss(datas) {
     let data = coures.split(",")[datas];
 
     $("#videos").removeAttr("src");
+
+    
 
     switch (data != null) {
 
@@ -140,7 +168,7 @@ function submenuload(k) {
 }
 function videopalye(videono) {
     //const videslist = "automation.mp4";
-    
+    $("#dvtopicsloud").hide();
     $("#imgsrc").hide();
     $("#videos").show();
     /*const listvideos = videolist[videono].split(",");*/
